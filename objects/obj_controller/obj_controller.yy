@@ -93,6 +93,16 @@
             "enumb": 121,
             "eventtype": 9,
             "m_owner": "3e9b96d3-52d0-4a71-8f0a-9b07dd632c49"
+        },
+        {
+            "id": "b6d43d7b-5ced-4845-aa97-4637beba7b50",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "3e9b96d3-52d0-4a71-8f0a-9b07dd632c49"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -111,7 +121,36 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "a7f8277d-e912-4235-8f67-c15b97764f6d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1000",
+            "varName": "obstacleInterval",
+            "varType": 1
+        },
+        {
+            "id": "fd0d16af-00cb-448e-80c7-467c02b796ff",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "9",
+            "varName": "obstacleChance",
+            "varType": 1
+        }
+    ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
