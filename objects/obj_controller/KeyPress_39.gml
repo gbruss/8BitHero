@@ -8,15 +8,18 @@ if instance_exists(obj_right)
 	if Roldest.y >= 750
 	{
 		//miss
-		health -= 10;
+		if health >= 10
+			health -= 10;
 	}
 	else if Roldest.y < 750 && Roldest.y > 650
 	{
 		//bad
-		health -= 5;
+		if health >= 5
+			health -= 5;
+		
 		score += 5;
 		instance_destroy(Roldest);
-		audio_play_sound(snd_mi, 3, false);
+		audio_play_sound(snd_5, 3, false);
 	}
 	else if Roldest.y < 651 && Roldest.y > 579
 	{
@@ -25,11 +28,12 @@ if instance_exists(obj_right)
 		if healthCounter == 5
 		{
 			healthCounter = 0;
-			health += 5;
+			if health < 100
+				health += 5;
 		}
 		score += 10;
 		instance_destroy(Roldest);
-		audio_play_sound(snd_mi, 3, false);
+		audio_play_sound(snd_5, 3, false);
 	}
 	else if Roldest.y < 580
 	{
@@ -38,10 +42,12 @@ if instance_exists(obj_right)
 		if healthCounter == 5
 		{
 			healthCounter = 0;
-			health += 5;
+			if health < 100
+				health += 5;
 		}
 		score += 20;
 		instance_destroy(Roldest);
-		audio_play_sound(snd_mi, 3, false);
+		audio_play_sound(snd_5, 3, false);
+		audio_play_sound(snd_drum3, 2, false);
 	}
 }

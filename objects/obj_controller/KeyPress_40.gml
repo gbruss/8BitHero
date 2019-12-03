@@ -8,15 +8,18 @@ if instance_exists(obj_down)
 	if Doldest.y >= 750
 	{
 		//miss
-		health -= 10;
+		if health >= 10
+			health -= 10;
 	}
 	else if Doldest.y < 750 && Doldest.y > 650
 	{
 		//bad
-		health -= 5;
+		if health >= 5
+			health -= 5;
+		
 		score += 5;
 		instance_destroy(Doldest);
-		audio_play_sound(snd_ti, 3, false);
+		audio_play_sound(snd_1, 3, false);
 	}
 	else if Doldest.y < 651 && Doldest.y > 579
 	{
@@ -25,11 +28,12 @@ if instance_exists(obj_down)
 		if healthCounter == 5
 		{
 			healthCounter = 0;
-			health += 5;
+			if health < 100
+				health += 5;
 		}
 		score += 10;
 		instance_destroy(Doldest);
-		audio_play_sound(snd_ti, 3, false);
+		audio_play_sound(snd_1, 3, false);
 	}
 	else if Doldest.y < 580
 	{
@@ -38,10 +42,12 @@ if instance_exists(obj_down)
 		if healthCounter == 5
 		{
 			healthCounter = 0;
-			health += 5;
+			if health < 100
+				health += 5;
 		}
 		score += 20;
 		instance_destroy(Doldest);
-		audio_play_sound(snd_ti, 3, false);
+		audio_play_sound(snd_1, 3, false);
+		audio_play_sound(snd_drum1, 2, false);
 	}
 }
