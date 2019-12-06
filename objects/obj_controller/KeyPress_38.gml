@@ -1,3 +1,4 @@
+randomFlare = random(4);
 if instance_exists(obj_up)
 {
 	var Uoldest = instance_find(obj_up, 0);
@@ -48,6 +49,14 @@ if instance_exists(obj_up)
 		score += 20;
 		instance_destroy(Uoldest);
 		audio_play_sound(snd_7, 3, false);
-		audio_play_sound(snd_drum4, 2, false);
+		//audio_play_sound(snd_drum4, 2, false);
+		if randomFlare >= 3
+			instance_create_layer(x, y, "Flares", obj_flare1);
+		else if randomFlare >= 2 && randomFlare < 3
+			instance_create_layer(x, y, "Flares", obj_flare2);
+		else if randomFlare >= 1 && randomFlare < 2
+			instance_create_layer(x, y, "Flares", obj_flare3);
+		else
+			instance_create_layer(x, y, "Flares", obj_flare4);
 	}
 }
