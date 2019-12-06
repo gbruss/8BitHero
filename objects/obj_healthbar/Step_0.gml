@@ -40,3 +40,8 @@ else if health == 95
 	image_index = 19;
 else if health == 100
 	image_index = 20;
+	
+if(health == 0)
+{
+		room_goto(roomEnd);
+}
