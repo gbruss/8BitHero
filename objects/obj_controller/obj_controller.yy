@@ -103,6 +103,16 @@
             "enumb": 0,
             "eventtype": 2,
             "m_owner": "3e9b96d3-52d0-4a71-8f0a-9b07dd632c49"
+        },
+        {
+            "id": "0df4ea75-8b96-441a-91ae-824e311a6565",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "3e9b96d3-52d0-4a71-8f0a-9b07dd632c49"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -148,6 +158,20 @@
             "resourceFilter": 1023,
             "value": "9",
             "varName": "obstacleChance",
+            "varType": 1
+        },
+        {
+            "id": "571e2340-6259-4bfc-aaee-a10f0423d527",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "6800",
+            "varName": "beatInterval",
             "varType": 1
         }
     ],

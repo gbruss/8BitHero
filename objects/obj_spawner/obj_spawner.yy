@@ -54,7 +54,7 @@
             "resourceFilter": 1023,
             "value": "100",
             "varName": "spawnInterval",
-            "varType": 1
+            "varType": 0
         },
         {
             "id": "84501c05-5ed6-476b-aa06-7afef6460166",

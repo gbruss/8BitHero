@@ -13,3 +13,9 @@ menu[0] = "Quit";
 
 menu_items = array_length_1d(menu);
 menu_cursor = 1;
+
+audio_stop_sound(snd_ambience);
+audio_stop_sound(snd_drum1);
+audio_stop_sound(snd_drum2);
+audio_stop_sound(snd_drum3);
+audio_stop_sound(snd_drum4);
